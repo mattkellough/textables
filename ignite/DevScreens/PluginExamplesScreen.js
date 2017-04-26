@@ -56,11 +56,7 @@ export default StackNavigator({
   headerMode: 'screen',
   initialRouteName: 'PluginExamplesScreen',
   navigationOptions: {
-    header: {
-      visible: false,
-      style: {
-        backgroundColor: '#3e243f'
-      }
-    }
+    headerVisible: false,
+    headerStyle: {backgroundColor: '#3e243f'}
   }
 })

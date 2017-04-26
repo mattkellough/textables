@@ -15,7 +15,6 @@ import FaqScreen from './FaqScreen'
 import styles from './Styles/PresentationScreenStyles'
 
 class PresentationScreen extends React.Component {
-
   openComponents = () => {
     this.props.navigation.navigate('ComponentExamplesScreen')
   }
@@ -95,13 +94,10 @@ export default StackNavigator({
   headerMode: 'none',
   // Keeping this here for future when we can make
   navigationOptions: {
-    header: {
-      left: (
-        <TouchableOpacity onPress={() => window.alert('pop')} ><Image source={Images.closeButton} style={{marginHorizontal: 10}} /></TouchableOpacity>
+    headerLeft: (
+      <TouchableOpacity onPress={() => window.alert('pop')} ><Image source={Images.closeButton} style={{marginHorizontal: 10}} /></TouchableOpacity>
       ),
-      style: {
-        backgroundColor: '#3e243f'
-      }
-    }
+    headerStyle:
+        {backgroundColor: '#3e243f'}
   }
 })
